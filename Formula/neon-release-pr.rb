@@ -9,6 +9,13 @@ class NeonReleasePr < Formula
   license "Apache-2.0"
   head "https://github.com/neondatabase/dev-actions.git", branch: "main"
 
+  bottle do
+    root_url "https://ghcr.io/v2/neondatabase-labs/tap"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "619a978f69d0f0dc47047799cd1653fc4390a34116d0e6ad6b7a0b36b650540e"
+    sha256 cellar: :any_skip_relocation, ventura:       "7bca42f563973e574e78c27e95f3ffdca107853fbaf2abcebd02ffaeeb4411fe"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "af971821ab7cfc8fd5b8cbeb5a831054d038d1da56f7d03b8ec37938da1a1eae"
+  end
+
   depends_on "gh"
   depends_on "python@3.13"
 
