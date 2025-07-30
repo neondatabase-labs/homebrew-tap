@@ -11,9 +11,9 @@ class NeonReleasePr < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/neondatabase-labs/tap"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "619a978f69d0f0dc47047799cd1653fc4390a34116d0e6ad6b7a0b36b650540e"
-    sha256 cellar: :any_skip_relocation, ventura:       "7bca42f563973e574e78c27e95f3ffdca107853fbaf2abcebd02ffaeeb4411fe"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "af971821ab7cfc8fd5b8cbeb5a831054d038d1da56f7d03b8ec37938da1a1eae"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "a5a310693adff907c1edcb0bbd4ba3faffc83eab8e6a51e6bb854f53e9d22bad"
+    sha256 cellar: :any_skip_relocation, ventura:       "90dc15cc57a3ea668729c45c65abc953951d1fda50f22b51b5b0d72644184681"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "df970bbd063b022da1a63b79386b8890b997bc1f82e59239095302a23d1f1b73"
   end
 
   depends_on "rust" => :build
