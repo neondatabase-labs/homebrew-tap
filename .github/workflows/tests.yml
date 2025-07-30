@@ -36,7 +36,11 @@ jobs:
 
       - run: brew test-bot --only-setup
 
+      # Temporary disable the step as it fails with
+      #   Taps/neondatabase-labs/homebrew-tap/home/.cache/gem/specs/index.rubygems.org%443/quick/Marshal.4.8/bundler-2.6.8.gemspec:1:1: F: Lint/Syntax: Invalid byte sequence in utf-8.
       - run: brew test-bot --only-tap-syntax
+        if: matrix.os != 'ubuntu-22.04'
+
       - name: Base64-encode GITHUB_TOKEN for HOMEBREW_DOCKER_REGISTRY_TOKEN
         id: base64-encode
         if: github.event_name == 'pull_request'
