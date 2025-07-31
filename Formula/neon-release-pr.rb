@@ -3,9 +3,9 @@ class NeonReleasePr < Formula
 
   desc "CLI tool for creating and managing release PRs for Neon components"
   homepage "https://github.com/neondatabase/dev-actions/tree/main/release-pr"
-  url "https://github.com/neondatabase/dev-actions/archive/31e0e1025b40de54151f442d1f67f17236bd22d6.tar.gz"
-  version "0.2.1"
-  sha256 "508d3c380e8c4e991a68b32f95140920743d635c9c6f289927e34a354ee3cefd"
+  url "https://github.com/neondatabase/dev-actions/archive/2336b4835a35d9c9e3c4eb3c3fc5f9adfff32939.tar.gz"
+  version "0.2.2"
+  sha256 "477b3275589d9b8f3374966dd831232dc94f9aab6ead174279c512011f2f9227"
   license "Apache-2.0"
   head "https://github.com/neondatabase/dev-actions.git", branch: "main"
 
